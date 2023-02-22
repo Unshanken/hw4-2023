@@ -1,0 +1,134 @@
+
+a.skip{
+  background: white;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: left 1s ease-out;
+  z-index: 1;
+  /* Requirement 1 code here -- Do not remove this comment. */
+  position: absolute;
+  left: -400px;
+  top: 200px;
+}
+
+
+  /* Requirement 2 code here -- Do not remove this comment. */
+nav a:focus{
+    border-top: solid 10px #ffff00;
+ }
+
+  /* Requirement 3 code here -- Do not remove this comment. */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    row-gap: 30px;
+}
+
+  /* Requirement 4 code here -- Do not remove this comment. */
+div.intro{
+    background-image: url("../images/header.jpg");
+    background-color: #858585;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }
+
+  /* Requirement 5 code here -- Do not remove this comment. */
+.about, .clients, .method, .contact{
+    grid-column: 2;
+}
+  /* Requirement 6 code here -- Do not remove this comment. */
+img{
+  width: 100%;
+}
+
+  /* Requirement 7 code here -- Do not remove this comment. */
+.about-image, .clients-image, .method-image, .contact-image{
+  grid-column: 1 / span 3;
+  max-height: 500px;
+}
+
+  /* Requirement 8 code here -- Do not remove this comment. */
+.about, .about-image {
+    grid-row: 1; /* place on first row */
+}
+
+.clients, .clients-image {
+    grid-row: 2; /* place on second row */
+}
+  
+.method, .method-image {
+    grid-row: 3; /* place on third row */
+}
+  
+.contact, .contact-image {
+    grid-row: 4; /* place on fourth row */
+}
+
+
+  /* Requirement 9 code here -- Do not remove this comment. */
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 40vh;
+  overflow: auto;
+  margin: auto;
+}
+
+
+  /*Add the media query here.  Make sure to */
+
+@media all and (min-width: 800px){
+  nav{
+    padding-top: 35px;
+    /* Requirement 10 code here -- Do not remove this comment. */
+    text-align:right;
+  }
+
+  nav li{
+    margin-left: 5%;
+    margin-right:0;
+  }
+
+  
+  /* Requirement 11 code here -- Do not remove this comment. */
+
+
+
+  /* Requirement 12 code here -- Do not remove this comment. */
+  
+
+
+  /* Requirement 13 code here -- Do not remove this comment. */
+ 
+
+  /* Requirement 14 code here -- Do not remove this comment. */
+ 
+
+  /* Requirement 15 code here -- Do not remove this comment. */
+}
+
+/** Code for prefers reduced motion **/
+/* Make no changes below this line.
+   *************************************** 
+   */
+   @media screen and (prefers-reduced-motion: reduce){
+    /*Turn off scroll*/
+    html{
+      scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    /*Turn off transition*/
+    a.skip {
+      -webkit-transition: initial; /* sets to default setting */
+      transition: initial; /* sets to default setting */
+    }
+  
+    /*Turn off parallax*/
+    .intro{
+      background-attachment: initial;
+    }
+  }
