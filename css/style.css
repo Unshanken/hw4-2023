@@ -80,6 +80,7 @@ img{
   max-height: 40vh;
   overflow: scroll;
   margin: auto;
+  align-self: center;
 }
 .text h2{
   align-self: flex-start;
@@ -125,7 +126,6 @@ img{
   
     /* Requirement 15 code here -- Do not remove this comment. */
     body .clients-image, .contact-image, .about-image, .method-image{
-      max-height: fit-content;
       overflow: hidden;
     }
 }
