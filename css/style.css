@@ -126,7 +126,6 @@ img{
     body .clients-image, .contact-image, .about-image, .method-image{
       max-height: 100%;
       max-width: 100%;
-      object-fit: contain;
       overflow: hidden;
     }
 }
