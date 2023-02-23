@@ -52,7 +52,6 @@ img{
 .about-image, .clients-image, .method-image, .contact-image{
   grid-column: 1 / span 3;
   max-height: 500px;
-
 }
 
   /* Requirement 8 code here -- Do not remove this comment. */
@@ -86,7 +85,50 @@ img{
 
 
   /*Add the media query here.  Make sure to */
-
+@media all and (min-width: 800px){
+    nav{
+      padding-top: 35px;
+      /* Requirement 10 code here -- Do not remove this comment. */
+      text-align: right;
+    }
+  
+    nav li{
+      margin-left: 5%;
+      margin-right:0;
+    }
+  
+  
+    /* Requirement 11 code here -- Do not remove this comment. */
+    .skip:focus{
+      position: fixed;
+      left: 0;
+      top: 20px;
+    }
+  
+    /* Requirement 12 code here -- Do not remove this comment. */
+    .container{
+      display: grid;
+      grid-template-columns: 50px auto 500px auto 50px;
+      grid-template-rows: 300px 300px 300px 300px;
+    }
+  
+  
+    /* Requirement 13 code here -- Do not remove this comment. */
+    .about, .method, .clients-image, .contact-image{
+      grid-column: 3 / span 2;
+    }
+  
+    /* Requirement 14 code here -- Do not remove this comment. */
+    .clients, .contact, .about-image, .method-image{
+      grid-column: 2 / span 2;
+    }
+  
+  
+    /* Requirement 15 code here -- Do not remove this comment. */
+    .clients-image, .contact-image, .about-image, .method-image, img{
+      max-height: 300px;
+    }
+}
 
 
 
