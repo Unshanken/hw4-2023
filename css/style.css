@@ -25,7 +25,6 @@ nav a:focus{
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     row-gap: 30px;
-    max-height: 100%;
 }
 
   /* Requirement 4 code here -- Do not remove this comment. */
@@ -82,7 +81,9 @@ img{
   overflow: scroll;
   margin: auto;
 }
-
+.text h2{
+  align-self: flex-start;
+}
 
   /*Add the media query here.  Make sure to */
 @media all and (min-width: 800px){
@@ -124,8 +125,7 @@ img{
   
     /* Requirement 15 code here -- Do not remove this comment. */
     body .clients-image, .contact-image, .about-image, .method-image{
-      max-height: 100%;
-      max-width: 100%;
+      max-height: fit-content;
       overflow: hidden;
     }
 }
