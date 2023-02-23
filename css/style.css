@@ -14,6 +14,8 @@ a.skip{
 
   /* Requirement 2 code here -- Do not remove this comment. */
 nav a:focus{
+    outline: none;
+    border: none;
     border-top: solid 10px #ffff00;
  }
 
@@ -49,7 +51,7 @@ img{
   /* Requirement 7 code here -- Do not remove this comment. */
 .about-image, .clients-image, .method-image, .contact-image{
   grid-column: 1 / span 3;
-  max-height: 500px;
+
 }
 
   /* Requirement 8 code here -- Do not remove this comment. */
