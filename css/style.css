@@ -25,7 +25,7 @@ nav a:focus{
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     row-gap: 30px;
-    max-height: auto;
+    max-height: 100%;
 }
 
   /* Requirement 4 code here -- Do not remove this comment. */
@@ -86,12 +86,12 @@ img{
 
   /*Add the media query here.  Make sure to */
 @media all and (min-width: 800px){
-    nav{
+    body nav{
       padding-top: 35px;
       /* Requirement 10 code here -- Do not remove this comment. */
       text-align: right;
     }
-  
+
     nav li{
       margin-left: 5%;
       margin-right:0;
@@ -123,8 +123,11 @@ img{
     }
   
     /* Requirement 15 code here -- Do not remove this comment. */
-    .clients-image, .contact-image, .about-image, .method-image, img{
-      max-height: 300px;
+    body .clients-image, .contact-image, .about-image, .method-image{
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      overflow: hidden;
     }
 }
 
